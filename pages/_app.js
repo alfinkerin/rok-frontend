@@ -1,11 +1,13 @@
 import App from "next/app";
-import Head from "next/head";
 import "../styles/globals.css";
 import "../styles/index.css";
 import { createContext } from "react";
 import { fetchAPI } from "../lib/api";
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
+import { DefaultSeo } from "next-seo";
+
+import SEO from "../next-seo.config";
 
 export const GlobalContext = createContext({});
 
@@ -14,7 +16,7 @@ const MyApp = ({ Component, pageProps }) => {
 
   return (
     <>
-      <Head></Head>
+      <DefaultSeo {...SEO} />
       <GlobalContext.Provider value={global}>
         <Navbar />
         <Component {...pageProps} />

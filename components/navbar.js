@@ -93,28 +93,26 @@ function Navbar() {
                 >
                   {i.nama === "guides" ? (
                     <div
-                      onClick={() => setMonavbar(true)}
+                      onClick={() =>
+                        monavbar ? setMonavbar(false) : setMonavbar(true)
+                      }
                       className="relative "
                     >
                       {i.nama}
                       <div
                         className={
                           monavbar
-                            ? "bg-gray-100 w-52 p-4 text-black z-50 top-4 right-4 absolute"
+                            ? "text-center text-white relative"
                             : "hidden"
                         }
                       >
-                        <p
-                          onClick={() => setMonavbar(false)}
-                          className="text-md text-black absolute z-50 top-2 right-4"
-                        >
-                          X
-                        </p>
-                        <ul className="mt-8">
+                        <ul className="mt-2">
                           {submenus.map((i, y) => (
-                            <li key={y} className="my-2 hover:underline ">
-                              {i.nama}
-                            </li>
+                            <Link href={i.url}>
+                              <li key={y} className="my-2 hover:underline ">
+                                <a onClick={() => setIsOpen(false)}>{i.nama}</a>
+                              </li>
+                            </Link>
                           ))}
                         </ul>
                       </div>

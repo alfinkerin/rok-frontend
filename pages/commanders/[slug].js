@@ -2,19 +2,30 @@ import React from "react";
 import { fetchAPI } from "../../lib/api";
 import ReactMarkdown from "react-markdown";
 const gfm = require("remark-gfm");
+import { NextSeo } from "next-seo";
 
 function Commanders({ commander }) {
-  console.log(commander);
+  const SEO = {
+    title: `Rise of kingdom indonesia | ${commander.nama}`,
+    description: `${commander.deskripsi}`,
+    openGraph: {
+      title: `Rise of kingdom indonesia | ${commander.nama}`,
+      description: `${commander.deskripsi}`,
+    },
+  };
   return (
-    <div className="pt-28 px-2 md:px-16 mb-10">
-      <p>{commander.nama}</p>
+    <>
+      <NextSeo {...SEO} />
+      <div className="pt-28 px-2 md:px-16 mb-10">
+        <p>{commander.nama}</p>
 
-      <ReactMarkdown
-        source={commander.content}
-        plugins={[gfm]}
-        escapeHtml={false}
-      />
-    </div>
+        <ReactMarkdown
+          source={commander.content}
+          plugins={[gfm]}
+          escapeHtml={false}
+        />
+      </div>
+    </>
   );
 }
 

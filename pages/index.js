@@ -7,10 +7,6 @@ import Side from "../components/side";
 export default function Home({ articles, commanders }) {
   return (
     <div className=" mb-10">
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
       <Side />
       <div className=" relative  h-screen w-full ">
         <video
