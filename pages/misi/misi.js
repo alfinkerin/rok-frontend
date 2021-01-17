@@ -9,11 +9,11 @@ function Misi({ data, dataEng }) {
   const [leng, setLeng] = useState(true);
 
   const SEO = {
-    title: "rise of kingdom indonesia | Commanders Page",
-    description: "Kumpulan commanders rise of kingdom indonesia ",
+    title: "rise of kingdom indonesia | quest Page",
+    description: "Kumpulan quest rise of kingdom indonesia ",
     openGraph: {
-      title: "rise of kingdom indonesia | Commanders Page",
-      description: "Kumpulan commanders rise of kingdom indonesia ",
+      title: "rise of kingdom indonesia | quest Page",
+      description: "Kumpulan quest rise of kingdom indonesia ",
     },
   };
 

@@ -17,7 +17,7 @@ function Versipc({ content }) {
     <>
       <NextSeo {...SEO} />
       <div className="pt-28 px-2 md:px-16 mb-10">
-        <h1 className="font-bold text-5xl uppercase text-center mb-6">
+        <h1 className="font-bold text-4xl uppercase text-center mb-6">
           {content.judul}
         </h1>
         <ReactMarkdown
