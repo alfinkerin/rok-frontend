@@ -49,7 +49,6 @@ export default function Home({ articles, commanders }) {
 }
 
 export async function getStaticProps() {
-  // Run API calls in parallel
   const [articles, commanders] = await Promise.all([
     fetchAPI("/articles?status=published&_limit=4"),
     fetchAPI("/commanders"),

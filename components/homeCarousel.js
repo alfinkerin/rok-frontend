@@ -28,7 +28,7 @@ function HomeCarousel({ commanders }) {
               <img
                 className="w-58 h-64 cursor-pointer  "
                 key={g}
-                src={"http://localhost:1337" + item?.media?.url}
+                src={"http://188.166.227.75" + item?.media?.url}
               />
             </Link>
           ))}

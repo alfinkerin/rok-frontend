@@ -3,6 +3,7 @@ import { fetchAPI } from "../../lib/api";
 import { NextSeo } from "next-seo";
 
 function Quest({ misi }) {
+  console.log(misi);
   const SEO = {
     title: `Rise of kingdom indonesia | ${misi.pertanyaan}`,
     description: `${misi.deskripsi}`,
