@@ -1,8 +1,14 @@
 import React from "react";
 import { fetchAPI } from "../../../lib/api";
 import { NextSeo } from "next-seo";
+import { useRouter } from "next/router";
 
 function QuestEn({ quest }) {
+  const router = useRouter();
+
+  if (router.isFallback) {
+    return <div>Loading...</div>;
+  }
   const SEO = {
     title: `Rise of kingdom indonesia | ${quest.quest}`,
     description: `${quest.deskripsi}`,

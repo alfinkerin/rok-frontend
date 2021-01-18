@@ -3,8 +3,14 @@ import { fetchAPI } from "../../lib/api";
 import ReactMarkdown from "react-markdown";
 const gfm = require("remark-gfm");
 import { NextSeo } from "next-seo";
+import { useRouter } from "next/router";
 
 function Commanders({ commander }) {
+  const router = useRouter();
+
+  if (router.isFallback) {
+    return <div>Loading...</div>;
+  }
   const SEO = {
     title: `Rise of kingdom indonesia | ${commander.nama}`,
     description: `${commander.deskripsi}`,
@@ -38,7 +44,7 @@ export async function getStaticPaths() {
         slug: commander.slug,
       },
     })),
-    fallback: false,
+    fallback: true,
   };
 }
 
