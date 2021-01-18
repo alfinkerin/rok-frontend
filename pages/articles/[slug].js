@@ -27,11 +27,13 @@ const Article = ({ article }) => {
 
         <div className="mt-10">
           <div className="w-full">
-            <ReactMarkdown
-              source={article.content}
-              plugins={[gfm]}
-              escapeHtml={false}
-            />
+            <article className="prose prose-sm sm:prose lg:prose-lg xl:prose-xl">
+              <ReactMarkdown
+                source={article.content}
+                plugins={[gfm]}
+                escapeHtml={false}
+              />
+            </article>
             <hr className="mt-6" />
             <div className=" mt-6 flex items-center">
               <div>

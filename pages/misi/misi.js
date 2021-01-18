@@ -33,7 +33,7 @@ function Misi({ data, dataEng }) {
                 placeholder="Search...."
                 onChange={(e) => setSearch(e.target.value)}
               ></input>
-              <div className=" w-auto justify-center mr-6 bg-dark rounded-md px-2 my-4 items-center flex">
+              <div className=" w-auto justify-center md:mr-6 bg-dark rounded-md px-2 my-4 items-center flex">
                 <p
                   className={
                     leng

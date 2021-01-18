@@ -20,11 +20,13 @@ function Versipc({ content }) {
         <h1 className="font-bold text-4xl uppercase text-center mb-6">
           {content.judul}
         </h1>
-        <ReactMarkdown
-          source={content.content}
-          plugins={[gfm]}
-          escapeHtml={false}
-        />
+        <article className="prose prose-sm sm:prose lg:prose-lg xl:prose-xl">
+          <ReactMarkdown
+            source={content.content}
+            plugins={[gfm]}
+            escapeHtml={false}
+          />
+        </article>
       </div>
     </>
   );
