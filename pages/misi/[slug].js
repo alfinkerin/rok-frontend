@@ -40,7 +40,7 @@ export async function getStaticPaths() {
         slug: misi.slug,
       },
     })),
-    fallback: false,
+    fallback: true,
   };
 }
 

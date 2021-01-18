@@ -37,7 +37,7 @@ export async function getStaticPaths() {
         slug: quest.slug,
       },
     })),
-    fallback: false,
+    fallback: true,
   };
 }
 
