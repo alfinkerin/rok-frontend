@@ -28,7 +28,7 @@ function HomeCarousel({ commanders }) {
               <img
                 className="w-58 h-64 cursor-pointer  "
                 key={g}
-                src={"http://188.166.227.75" + item?.media[0]?.url}
+                src={"https://rokindo.skuuy.id" + item?.media[0]?.url}
               />
             </Link>
           ))}

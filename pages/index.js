@@ -3,6 +3,7 @@ import Artikel from "../components/articles";
 import { fetchAPI } from "../lib/api";
 import HomeCarousel from "../components/homeCarousel";
 import Side from "../components/side";
+import Link from "next/link";
 
 export default function Home({ articles, commanders }) {
   return (
@@ -29,12 +30,16 @@ export default function Home({ articles, commanders }) {
             website ini
           </p>
           <div className="flex py-4 px-6 md:py-0 md:px-0 place-content-center">
-            <button className=" w-32 mx-6 xl:w-40 bg-gradient-to-r from-anggur  via-pink-500 to-gold border-white uppercase mt-2  text-xs  text-white  transition duration-500 ease-in-out  transform hover:-translate-y-1 hover:scale-110  font-bold py-2 px-4 rounded-full">
-              pc version
-            </button>
-            <button className=" w-32 mx-6 xl:w-40 bg-dark transition duration-500 ease-in-out  transform hover:-translate-y-1 hover:scale-110 border border-white uppercase mt-2  text-xs  text-white  mr-2 font-bold py-2 px-4 rounded-full">
-              quest
-            </button>
+            <Link href="/versipc">
+              <button className=" w-32 mx-6 xl:w-40 bg-gradient-to-r from-anggur  via-pink-500 to-gold border-white uppercase mt-2  text-xs  text-white  transition duration-500 ease-in-out  transform hover:-translate-y-1 hover:scale-110  font-bold py-2 px-4 rounded-full">
+                pc version
+              </button>
+            </Link>
+            <Link href="/misi/misi">
+              <button className=" w-32 mx-6 xl:w-40 bg-dark transition duration-500 ease-in-out  transform hover:-translate-y-1 hover:scale-110 border border-white uppercase mt-2  text-xs  text-white  mr-2 font-bold py-2 px-4 rounded-full">
+                quest
+              </button>
+            </Link>
           </div>
         </div>
       </div>
