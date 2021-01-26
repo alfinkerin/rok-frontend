@@ -4,12 +4,12 @@ export default {
   openGraph: {
     type: "website",
     local: "en_IE",
-    url: "https://www.rokindonesia.com",
-    site_name: "rok indonesia",
+    url: "https://www.rokindo.com",
+    site_name: "rokindo",
   },
   twitter: {
     handle: "@alfin_krs",
-    site: "@rokindonesia",
+    site: "@rokindo",
     cardType: "summary_large_image",
   },
 };

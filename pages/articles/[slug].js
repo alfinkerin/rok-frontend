@@ -8,10 +8,10 @@ import { NextSeo } from "next-seo";
 const Article = ({ article }) => {
   const SEO = {
     title: `Rise of kingdom indonesia | ${article.title}`,
-    description: `${article.description}`,
+    description: article.description,
     openGraph: {
       title: `Rise of kingdom indonesia | ${article.title}`,
-      description: `${article.description}`,
+      description: article.description,
     },
   };
   return (

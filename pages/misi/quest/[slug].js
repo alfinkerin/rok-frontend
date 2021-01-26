@@ -11,10 +11,10 @@ function QuestEn({ quest }) {
   }
   const SEO = {
     title: `Rise of kingdom indonesia | ${quest.quest}`,
-    description: `${quest.deskripsi}`,
+    description: quest.deskripsi,
     openGraph: {
       title: `Rise of kingdom indonesia | ${quest.quest}`,
-      description: `${quest.deskripsi}`,
+      description: quest.deskripsi,
     },
   };
   return (

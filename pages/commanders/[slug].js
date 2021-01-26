@@ -13,10 +13,10 @@ function Commanders({ commander }) {
   }
   const SEO = {
     title: `Rise of kingdom indonesia | ${commander.nama}`,
-    description: `${commander.deskripsi}`,
+    description: commander.deskripsi,
     openGraph: {
       title: `Rise of kingdom indonesia | ${commander.nama}`,
-      description: `${commander.deskripsi}`,
+      description: commander.deskripsi,
     },
   };
   return (
