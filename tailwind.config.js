@@ -29,6 +29,26 @@ module.exports = {
         90: "90rem",
         100: "100rem",
       },
+
+      typography: {
+        DEFAULT: {
+          css: {
+            color: "#333",
+            a: {
+              color: "#3182ce",
+              "&:hover": {
+                color: "#2c5282",
+              },
+            },
+            maxWidth: "100%",
+            p: {
+              img: {
+                width: "100%",
+              },
+            },
+          },
+        },
+      },
     },
   },
   variants: {},
