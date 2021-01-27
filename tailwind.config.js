@@ -46,6 +46,18 @@ module.exports = {
                 width: "100%",
               },
             },
+            h1: {
+              textAlign: "center",
+            },
+            h2: {
+              textAlign: "center",
+            },
+            h3: {
+              textAlign: "center",
+            },
+            thead: {
+              backgroundColor: "#e5e7eb",
+            },
           },
         },
       },

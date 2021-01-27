@@ -23,7 +23,7 @@ function Versipc({ articles, content }) {
             <h1 className="font-bold text-4xl uppercase  mb-6">
               {content.judul}
             </h1>
-            <article className="prose prose-sm sm:prose lg:prose-lg xl:prose-xl">
+            <article className="prose prose-sm text-justify table-auto sm:prose lg:prose-lg xl:prose-xl">
               <ReactMarkdown
                 source={content.content}
                 plugins={[gfm]}
