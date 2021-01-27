@@ -18,16 +18,16 @@ function Commanders({ data, category }) {
     <>
       <NextSeo {...SEO} />
       <div className=" w-full px-2 md:px-16  pt-28 mb-10">
-        <div className="">
-          Rise of Kingdom Commanders In The Rise of Kingdoms, there are
-          Legendary, Epic, Elite and Advance commanders. All commanders have 4
-          skills and to unlock all 4 skills you need to upgrade stars and
-          levels. Epic and Legendary have a special 5th skill that is very
-          important. Max one by one commander. To upgrade skill you need to use
-          commander sculpture or universal sculpture. Level 10 you will unlock
-          2nd skill, on level 20 you will unlock 3rd skill. On level 30 you will
-          unlock 4th. Max level is 60, and you want your primary commander to be
-          level 60 because of talent.
+        <div className="text-3xl text-center font-semibold">
+          Commander Rise of Kingdom
+        </div>
+        <div className="mt-4 text-lg">
+          Di dalam game Rise Of Kingdom terdapat berbagai jenis commander, dan
+          berbagai jenis tipe seperti legendary, epic, elit, dll. Setiap
+          commander memiliki 4 jenis skill , untuk commander tipe epic dan
+          legendary mempunyai special skill jadi totalnya ada 5 skill, untuk
+          menaikan skill di butuhkan patung, dan untuk membuka skill di butuhkan
+          level.
         </div>
         <div className="block md:flex md:flex-wrap mt-10  ">
           <div className=" w-full text-center md:text-left md:w-1/5">
