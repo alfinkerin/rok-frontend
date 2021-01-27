@@ -1,6 +1,7 @@
 export default {
-  title: "rise of kingdom indonesia",
-  description: "fansite rise of kingdom indonesia",
+  title: "Rise of Kingdom Indonesia",
+  description:
+    "fansite dari rise of kingdom indonesia, cari misi dan jawaban serta petunjuk untuk bermain rise of kingdom ",
   openGraph: {
     type: "website",
     local: "en_IE",
