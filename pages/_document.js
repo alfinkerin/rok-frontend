@@ -12,6 +12,10 @@ class MyDocument extends Document {
       <Html>
         <Head>
           <link rel="icon" href="fav.ico"></link>
+          <meta
+            name="google-site-verification"
+            content="p4ARs-QIOlapIE2FRR3pRkgIoQL1eVuykwN0Tm-sT8c"
+          />
           <script
             async
             src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
