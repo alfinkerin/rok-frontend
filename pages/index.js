@@ -68,7 +68,7 @@ export default function Home({ articles, commanders }) {
 
 export async function getStaticProps() {
   const [articles, commanders] = await Promise.all([
-    fetchAPI("/articles?status=published&_limit=4"),
+    fetchAPI("/articles?_sort=publishedAt:desc&_limit=4"),
     fetchAPI("/commanders"),
   ]);
 
