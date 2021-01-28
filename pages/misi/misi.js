@@ -22,9 +22,21 @@ function Misi({ data, dataEng }) {
       <NextSeo {...SEO} />
       <div className="pt-24 px-2 md:px-16 pb-10 bg-gray-100">
         <p className="uppercase font-bold text-3xl text-black text-center">
-          Cari jawaban dari quest rise of kingdom{" "}
+          Cari jawaban dari quest rise of kingdom
         </p>
-        <div className="w-full flex mt-8">
+        <div className="mt-8">
+          <span className="font-semibold uppercase text-xl">Catatan :</span>
+          <div className="block md:flex">
+            <span className="text-md md:text-lg text-dark font-medium">
+              ID = Bahasa Indonesia
+            </span>
+            <span className=" mx-2 md:mx-4">|</span>
+            <span className="text-md md:text-lg text-dark font-medium">
+              EN = Bahasa Inggris
+            </span>
+          </div>
+        </div>
+        <div className="w-full flex mt-4">
           <div className="w-full md:w-3/4 block">
             <div className=" w-full justify-between block md:flex">
               <input

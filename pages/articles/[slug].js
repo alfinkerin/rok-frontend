@@ -4,8 +4,15 @@ import { fetchAPI } from "../../lib/api";
 import Image from "../../components/image";
 const gfm = require("remark-gfm");
 import { NextSeo } from "next-seo";
+import { useRouter } from "next/router";
 
 const Article = ({ article }) => {
+  const router = useRouter();
+
+  if (router.isFallback) {
+    return <div>Loading...</div>;
+  }
+
   const SEO = {
     title: `Rise of kingdom indonesia | ${article.title}`,
     description: article.description,
@@ -14,6 +21,7 @@ const Article = ({ article }) => {
       description: article.description,
     },
   };
+
   return (
     <>
       <NextSeo {...SEO} />
@@ -75,7 +83,7 @@ export async function getStaticPaths() {
         slug: article.slug,
       },
     })),
-    fallback: false,
+    fallback: true,
   };
 }
 
