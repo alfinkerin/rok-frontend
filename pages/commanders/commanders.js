@@ -22,7 +22,7 @@ function Commanders({ data, category }) {
           Commander Rise of Kingdom
         </div>
         <div className="mt-4 text-lg">
-          Di dalam game Rise Of Kingdom terdapat berbagai jenis commander, dan
+          Di dalam game Rise of Kingdom terdapat berbagai jenis commander, dan
           berbagai jenis tipe seperti legendary, epic, elit, dll. Setiap
           commander memiliki 4 jenis skill , untuk commander tipe epic dan
           legendary mempunyai special skill jadi totalnya ada 5 skill, untuk
