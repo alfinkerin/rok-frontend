@@ -74,7 +74,7 @@ export async function getStaticProps() {
   ]);
 
   return {
-    props: { data, category }, // will be passed to the page component as props
+    props: { data, category },
   };
 }
 export default Commanders;
